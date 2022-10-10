@@ -1,0 +1,60 @@
+@use "../abstracts" as a;
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+nav{
+    height: a.$navHeight;
+    background: a.$bgGreen;
+    color: a.$white;
+    border-bottom: 2px solid a.$white;
+    // border-bottom-left-radius: 25px;
+    // border-bottom-right-radius: 25px;
+    @include a.flexCenter(row);
+    justify-content: space-between;
+    padding: 1rem;
+    .logo{
+        width: 72px;
+        svg path, svg text{
+            fill: a.$white;
+        }
+    }
+    ul {
+        @media (min-width:481px) {
+            @include a.flexCenter(row);            
+        }
+
+        a{    
+            color: a.$white;
+            text-decoration: none;
+            display: none;
+            @media (min-width:481px) {
+                display: block;
+                text-transform: uppercase;
+                margin-right: 2rem;
+                &:hover{
+                    color: a.$textGreen;
+                }                
+            }
+            @media (min-width:1025px) {
+                font-size: 1.5rem;
+            }
+            li{
+            list-style: none;
+            font-family: 'Alata', sans-serif;
+            }
+        }
+
+        > li:last-child{
+            display: block;
+            svg{
+                fill: a.$white;
+                &:hover{
+                    fill: a.$textGreen;
+                }
+            }
+        @media (min-width:481px) {
+            display: none;
+        }
+        }
+
+    }
+}

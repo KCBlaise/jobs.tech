@@ -1,0 +1,53 @@
+@use '../abstracts' as a;
+.job-card-item{
+    padding: 2rem 1.5rem;
+    background-color: #fff;
+    border-radius: a.$cardBorderRadius;
+    position: relative;
+    text-decoration: none;
+
+    .job-info{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: gray;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    }
+
+    .job-type{
+        text-transform: capitalize;
+    }
+
+    .job-title{
+        margin-bottom: 1rem;
+        font-weight: 700;
+        color: #000;
+    }
+
+    .company{
+        margin-bottom: 3rem;
+        color: gray;
+    }
+
+    .location{
+        color: a.$textGreen;
+        font-weight: 700;
+    }
+
+    .company-img{
+        position: absolute;
+        top: -1.5rem;
+        width: 50px;
+        height: 50px;
+        /* background: purple; */
+        @include a.flexCenter(row);
+        border-radius: a.$cardBorderRadius;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
