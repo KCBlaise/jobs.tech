@@ -1,4 +1,5 @@
 @use './colors' as c;
+
 @mixin flexCenter($direction) {
     display: flex;
     align-items: center;
@@ -15,14 +16,17 @@
 @mixin buttonStyle {
     background: transparent;
     outline: none;
+    cursor: pointer;
     border: 2px solid c.$textGreen;
     color: c.$textGreen;
     padding: 1rem 1rem;
     border-radius: 1rem;
+    
     &:hover{
         background-color: c.$textGreen;
         color: c.$white;
     }
+    
     @media (min-width:1250px){
         border-radius: 1.5rem;
     }
@@ -31,7 +35,8 @@
 @mixin  maxWidth {
     max-width: 600px;
     margin: auto;
+    
     @media (min-width:1250px) {
-        max-width: 50vw;        
+        max-width: 60vw;        
     } 
 }

@@ -1,101 +1,15 @@
-@use "../components/nav";
 @use "../abstracts" as a;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@use "../components/nav";
+@use "../components/landingMain";
+@use "../components/partners";
+
 
 .landing-page{
     min-height: 100vh;
-    // background-color: a.$bgGrey;
     @include a.backgroundCenter;
-    main{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        font-family: 'Poppins', sans-serif;
-        color: a.$textGreen;
-        @media (min-width:600px) {
-            padding-top: 0;
-            padding-bottom: 0;            
-        }
-        h1{
-            margin: 0.5rem 0;
-            line-height: 1.4;
-        }
-        button{
-            @include a.buttonStyle;
-            margin-top: 1rem;
-            cursor: pointer;
-            @media (min-width:1250px) {
-                font-size: 18px;
-            }
-            @media (min-width:1250px) {
-                font-size: 26px;
-            }
-        }
-        .landing-page-large-screen{
-            @include a.backgroundCenter;
-            min-height: calc(100vh - a.$navHeight);
-            position: relative;
-            > div.bg-blur{
-                background-color: a.$bgBlurWhite;
-                position: absolute;
-                inset: 0;
-                @include a.flexCenter(column);
-                align-items: flex-start;
-                padding-left: 1rem;
-            }
-            .landing-text{
-                @include a.maxWidth;
-                margin: 0;
-                font-size: 14px;
-                @media (min-width:1250px) {
-                        font-size: 16px;
-                }
-                @media (min-width:1250px) {
-                        font-size: 24px;
-                } 
-            }
-        }
-        .landing-page-card{
-            @include a.maxWidth;
-            background-color: a.$white;
-            padding: 1rem 1rem 2rem;
-            border-radius: a.$cardBorderRadius;
-            margin: a.$cardMarginBottom 0.5rem;
-            .landing-image{
-                img{
-                    width: 100%;            border-radius: a.$cardBorderRadius;
-                }
-                figcaption{
-                    font-size: 14px;
-                    @media (min-width:1250px) {
-                        font-size: 16px;
-                    }
-                    @media (min-width:1250px) {
-                        font-size: 24px;
-                    }  
-                }
-            }
-            
-        }
+    padding-bottom: 1rem;
 
-        .partners{
-            @include a.maxWidth;
-            @include a.flexCenter(row);
-            background-color: a.$white;
-            border-radius: a.$cardBorderRadius;
-            margin: a.$cardMarginBottom 0.5rem;
-            @media (min-width:600px) {
-                margin: 0;
-                border-radius: 0;
-                max-width: none;
-                background-color: a.$white
-            }
-            a{
-                width: 40%;
-                margin: auto;
-                svg{
-                    width: 100%;
-                }
-            }
-        }
+    @media (min-width:600px) {
+        padding-bottom: 0;        
     }
 }

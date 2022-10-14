@@ -18,27 +18,24 @@ nav .logo {
 nav .logo svg path, nav .logo svg text {
   fill: rgb(243, 243, 243);
 }
-@media (min-width: 481px) {
-  nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-  }
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 nav ul a {
   color: rgb(243, 243, 243);
   text-decoration: none;
-  display: none;
+  margin-left: 1rem;
+}
+nav ul a:hover {
+  color: #0a9946;
 }
 @media (min-width: 481px) {
   nav ul a {
-    display: block;
     text-transform: uppercase;
-    margin-right: 2rem;
-  }
-  nav ul a:hover {
-    color: #0a9946;
+    margin-left: 2rem;
   }
 }
 @media (min-width: 1025px) {
@@ -50,80 +47,55 @@ nav ul a li {
   list-style: none;
   font-family: "Alata", sans-serif;
 }
-nav ul > li:last-child {
-  display: block;
-}
-nav ul > li:last-child svg {
-  fill: rgb(243, 243, 243);
-}
-nav ul > li:last-child svg:hover {
-  fill: #0a9946;
-}
-@media (min-width: 481px) {
-  nav ul > li:last-child {
-    display: none;
-  }
-}
 
-.landing-page {
-  min-height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.landing-page main {
+main {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: "Poppins", sans-serif;
   color: #0a9946;
 }
 @media (min-width: 600px) {
-  .landing-page main {
+  main {
     padding-top: 0;
     padding-bottom: 0;
   }
 }
-.landing-page main h1 {
+main h1 {
   margin: 0.5rem 0;
   line-height: 1.4;
 }
-.landing-page main button {
+main button {
   background: transparent;
   outline: none;
+  cursor: pointer;
   border: 2px solid #0a9946;
   color: #0a9946;
   padding: 1rem 1rem;
   border-radius: 1rem;
   margin-top: 1rem;
-  cursor: pointer;
 }
-.landing-page main button:hover {
+main button:hover {
   background-color: #0a9946;
   color: rgb(243, 243, 243);
 }
 @media (min-width: 1250px) {
-  .landing-page main button {
+  main button {
     border-radius: 1.5rem;
   }
 }
 @media (min-width: 1250px) {
-  .landing-page main button {
-    font-size: 18px;
-  }
-}
-@media (min-width: 1250px) {
-  .landing-page main button {
+  main button {
     font-size: 26px;
   }
 }
-.landing-page main .landing-page-large-screen {
+main .landing-page-large-screen {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: calc(100vh - 100px);
   position: relative;
 }
-.landing-page main .landing-page-large-screen > div.bg-blur {
+main .landing-page-large-screen > div.bg-blur {
   background-color: rgba(243, 243, 243, 0.7);
   position: absolute;
   inset: 0;
@@ -134,28 +106,23 @@ nav ul > li:last-child svg:hover {
   align-items: flex-start;
   padding-left: 1rem;
 }
-.landing-page main .landing-page-large-screen .landing-text {
+main .landing-page-large-screen .landing-text {
   max-width: 600px;
   margin: auto;
   margin: 0;
   font-size: 14px;
 }
 @media (min-width: 1250px) {
-  .landing-page main .landing-page-large-screen .landing-text {
-    max-width: 50vw;
+  main .landing-page-large-screen .landing-text {
+    max-width: 60vw;
   }
 }
 @media (min-width: 1250px) {
-  .landing-page main .landing-page-large-screen .landing-text {
-    font-size: 16px;
-  }
-}
-@media (min-width: 1250px) {
-  .landing-page main .landing-page-large-screen .landing-text {
+  main .landing-page-large-screen .landing-text {
     font-size: 24px;
   }
 }
-.landing-page main .landing-page-card {
+main .landing-page-card {
   max-width: 600px;
   margin: auto;
   background-color: rgb(243, 243, 243);
@@ -164,28 +131,24 @@ nav ul > li:last-child svg:hover {
   margin: 1rem 0.5rem;
 }
 @media (min-width: 1250px) {
-  .landing-page main .landing-page-card {
-    max-width: 50vw;
+  main .landing-page-card {
+    max-width: 60vw;
   }
 }
-.landing-page main .landing-page-card .landing-image img {
+main .landing-page-card .landing-image img {
   width: 100%;
   border-radius: 1rem;
 }
-.landing-page main .landing-page-card .landing-image figcaption {
+main .landing-page-card .landing-image figcaption {
   font-size: 14px;
 }
 @media (min-width: 1250px) {
-  .landing-page main .landing-page-card .landing-image figcaption {
-    font-size: 16px;
-  }
-}
-@media (min-width: 1250px) {
-  .landing-page main .landing-page-card .landing-image figcaption {
+  main .landing-page-card .landing-image figcaption {
     font-size: 24px;
   }
 }
-.landing-page main .partners {
+
+.partners {
   max-width: 600px;
   margin: auto;
   display: flex;
@@ -197,22 +160,35 @@ nav ul > li:last-child svg:hover {
   margin: 1rem 0.5rem;
 }
 @media (min-width: 1250px) {
-  .landing-page main .partners {
-    max-width: 50vw;
+  .partners {
+    max-width: 60vw;
   }
 }
 @media (min-width: 600px) {
-  .landing-page main .partners {
+  .partners {
     margin: 0;
     border-radius: 0;
     max-width: none;
     background-color: rgb(243, 243, 243);
   }
 }
-.landing-page main .partners a {
+.partners a {
   width: 40%;
   margin: auto;
 }
-.landing-page main .partners a svg {
+.partners a svg {
   width: 100%;
+}
+
+.landing-page {
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 1rem;
+}
+@media (min-width: 600px) {
+  .landing-page {
+    padding-bottom: 0;
+  }
 }/*# sourceMappingURL=landingPage.css.map */

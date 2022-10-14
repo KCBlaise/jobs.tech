@@ -1,0 +1,46 @@
+@use "../abstracts" as a;
+.filter{
+    display: inline-block;
+    min-width: 70vw;
+    position: relative;
+    
+    > div{
+        padding-left: 10px;
+        width: 48px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        @media (min-width:600px){
+            width: 64px;
+        }
+
+        svg{
+            width: 100%;
+            fill: a.$textGreen;
+        }
+    }
+    
+    input{
+        outline: none;
+        width: 100%;
+        border: 0;
+        height: 70px;
+        padding: 1rem;
+        padding-left: 3.5rem;
+        color: a.$textGreen;
+        font-family: 'Alata', sans-serif;
+        font-size: 1rem;
+        
+        @media (min-width:600px){
+            height: 100px;
+            padding-left: 4rem;
+            font-size: 1.5rem;
+        }
+        
+        @media (min-width:900px){
+            padding-left: 5rem;
+        }                  
+    }
+}
