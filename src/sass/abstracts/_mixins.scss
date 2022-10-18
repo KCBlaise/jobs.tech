@@ -1,3 +1,4 @@
+@use './breakpoints' as *;
 @use './colors' as c;
 
 @mixin flexCenter($direction) {
@@ -19,7 +20,7 @@
     cursor: pointer;
     border: 2px solid c.$textGreen;
     color: c.$textGreen;
-    padding: 1rem 1rem;
+    padding: 1rem;
     border-radius: 1rem;
     
     &:hover{
@@ -27,8 +28,9 @@
         color: c.$white;
     }
     
-    @media (min-width:1250px){
+    @include responsive(pc){
         border-radius: 1.5rem;
+        padding: 1rem 2rem;
     }
 }
 
@@ -36,7 +38,7 @@
     max-width: 600px;
     margin: auto;
     
-    @media (min-width:1250px) {
+    @include responsive(pc) {
         max-width: 60vw;        
     } 
 }

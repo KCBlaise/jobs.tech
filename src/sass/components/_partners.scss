@@ -6,7 +6,7 @@
     border-radius: a.$cardBorderRadius;
     margin: a.$landingPageCardMargin;
     
-    @media (min-width:600px) {
+    @include a.responsive(tablet) {
         margin: 0;
         border-radius: 0;
         max-width: none;

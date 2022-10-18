@@ -7,7 +7,7 @@ main{
     font-family: 'Poppins', sans-serif;
     color: a.$textGreen;
     
-    @media (min-width:600px) {
+    @include a.responsive(tablet) {
         padding-top: 0;
         padding-bottom: 0;            
     }
@@ -18,10 +18,10 @@ main{
     }
     
     button{
-        @include a.buttonStyle;
         margin-top: 1rem;
+        @include a.buttonStyle;
         
-        @media (min-width:1250px) {
+        @include a.responsive(pc) {
             font-size: 26px;
         }
     }
@@ -45,7 +45,7 @@ main{
             margin: 0;
             font-size: 14px;
             
-            @media (min-width:1250px) {
+            @include a.responsive(pc) {
                 font-size: 24px;
             } 
         }
@@ -67,7 +67,7 @@ main{
             figcaption{
                 font-size: 14px;
                 
-                @media (min-width:1250px) {
+                @include a.responsive(pc) {
                     font-size: 24px;
                 }  
             }

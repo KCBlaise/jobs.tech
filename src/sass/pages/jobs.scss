@@ -10,7 +10,7 @@
     min-height: 100vh;
     background-color: a.$bgGrey;
 
-    @media (min-width:600px) {
+    @include a.responsive(tablet) {
         padding-bottom: 0;        
     }
     
@@ -19,11 +19,11 @@
         @include a.flexCenter(column);
         padding: 1rem 1rem 4rem;
         
-        @media (min-width:900px) {
+        @include a.responsive(large-tab) {
             max-width: 1000px;            
         }
         
-        @media (min-width:2000px){
+        @include a.responsive(tv){
             max-width: 1800px;
         }
     }

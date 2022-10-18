@@ -12,6 +12,7 @@ nav{
     
     .logo{
         width: 72px;
+
         svg path, svg text{
             fill: a.$white;
         }
@@ -24,14 +25,17 @@ nav{
             color: a.$white;
             text-decoration: none;
             margin-left: 1rem;
+            
             &:hover{
                 color: a.$textGreen;
             }
-            @media (min-width:481px) {
+            
+            @include a.responsive(phone) {
                 text-transform: uppercase;
                 margin-left: 2rem;
             }
-            @media (min-width:1025px) {
+            
+            @include a.responsive(pc) {
                 font-size: 1.5rem;
             }
 

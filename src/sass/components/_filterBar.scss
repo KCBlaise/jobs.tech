@@ -12,7 +12,7 @@
         top: 50%;
         transform: translateY(-50%);
         
-        @media (min-width:600px){
+        @include a.responsive(tablet){
             width: 64px;
         }
 
@@ -33,13 +33,13 @@
         font-family: 'Alata', sans-serif;
         font-size: 1rem;
         
-        @media (min-width:600px){
+        @include a.responsive(tablet){
             height: 100px;
             padding-left: 4rem;
             font-size: 1.5rem;
         }
         
-        @media (min-width:900px){
+        @include a.responsive(large-tab){
             padding-left: 5rem;
         }                  
     }

@@ -1,0 +1,47 @@
+$breakpoints : (
+    // using min-width
+    "small": 0,
+    "phone": 480px,
+    "tablet": 600px,
+    "large-tab": 900px,
+    "pc": 1025px,
+    "tv": 2000px 
+);
+
+@mixin responsive($bp) {
+    @if $bp == small {
+        @media (min-width: map-get($breakpoints, "small")) {
+            @content;            
+        }   
+    }
+
+    @if $bp == phone {
+        @media (min-width: map-get($breakpoints, "phone")) {
+            @content;            
+        }   
+    }
+
+    @if $bp == tablet {
+        @media (min-width: map-get($breakpoints, "tablet")) {
+            @content;            
+        }   
+    }
+
+    @if $bp == large-tab {
+        @media (min-width: map-get($breakpoints, "large-tab")) {
+            @content;            
+        }   
+    }
+
+    @if $bp == pc {
+        @media (min-width: map-get($breakpoints, "pc")) {
+            @content;            
+        }   
+    }
+
+    @if $bp == tv {
+        @media (min-width: map-get($breakpoints, "tv")) {
+            @content;            
+        }   
+    }
+}

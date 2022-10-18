@@ -9,7 +9,7 @@
     @include a.backgroundCenter;
     padding-bottom: 1rem;
 
-    @media (min-width:600px) {
+    @include a.responsive(tablet) {
         padding-bottom: 0;        
     }
 }

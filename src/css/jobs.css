@@ -31,7 +31,7 @@ nav ul a {
 nav ul a:hover {
   color: #0a9946;
 }
-@media (min-width: 481px) {
+@media (min-width: 480px) {
   nav ul a {
     text-transform: uppercase;
     margin-left: 2rem;
@@ -195,16 +195,17 @@ nav ul a li {
   cursor: pointer;
   border: 2px solid #0a9946;
   color: #0a9946;
-  padding: 1rem 1rem;
+  padding: 1rem;
   border-radius: 1rem;
 }
 .load-more-btn:hover {
   background-color: #0a9946;
   color: rgb(243, 243, 243);
 }
-@media (min-width: 1250px) {
+@media (min-width: 1025px) {
   .load-more-btn {
     border-radius: 1.5rem;
+    padding: 1rem 2rem;
   }
 }
 
@@ -226,7 +227,7 @@ nav ul a li {
   flex-direction: column;
   padding: 1rem 1rem 4rem;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1025px) {
   .jobs-page .jobs-section {
     max-width: 60vw;
   }

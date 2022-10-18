@@ -32,7 +32,7 @@ nav ul a {
 nav ul a:hover {
   color: #0a9946;
 }
-@media (min-width: 481px) {
+@media (min-width: 480px) {
   nav ul a {
     text-transform: uppercase;
     margin-left: 2rem;
@@ -65,25 +65,26 @@ main h1 {
   line-height: 1.4;
 }
 main button {
+  margin-top: 1rem;
   background: transparent;
   outline: none;
   cursor: pointer;
   border: 2px solid #0a9946;
   color: #0a9946;
-  padding: 1rem 1rem;
+  padding: 1rem;
   border-radius: 1rem;
-  margin-top: 1rem;
 }
 main button:hover {
   background-color: #0a9946;
   color: rgb(243, 243, 243);
 }
-@media (min-width: 1250px) {
+@media (min-width: 1025px) {
   main button {
     border-radius: 1.5rem;
+    padding: 1rem 2rem;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1025px) {
   main button {
     font-size: 26px;
   }
@@ -112,12 +113,12 @@ main .landing-page-large-screen .landing-text {
   margin: 0;
   font-size: 14px;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1025px) {
   main .landing-page-large-screen .landing-text {
     max-width: 60vw;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1025px) {
   main .landing-page-large-screen .landing-text {
     font-size: 24px;
   }
@@ -130,7 +131,7 @@ main .landing-page-card {
   border-radius: 1rem;
   margin: 1rem 0.5rem;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1025px) {
   main .landing-page-card {
     max-width: 60vw;
   }
@@ -142,7 +143,7 @@ main .landing-page-card .landing-image img {
 main .landing-page-card .landing-image figcaption {
   font-size: 14px;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1025px) {
   main .landing-page-card .landing-image figcaption {
     font-size: 24px;
   }
@@ -159,7 +160,7 @@ main .landing-page-card .landing-image figcaption {
   border-radius: 1rem;
   margin: 1rem 0.5rem;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1025px) {
   .partners {
     max-width: 60vw;
   }
