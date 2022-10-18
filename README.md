@@ -39,7 +39,7 @@ It is powered by the Remotive API.
 
 <br/><br/>
 
-!["Frontend" Search](/src/images/README/screencapture-jobs_tech_frontend.png "Frontend" Search on Jobs Page")  
+!["Frontend" Search](/src/images/README/screencapture-jobs_tech_frontend.png "'Frontend' Search on Jobs Page")  
 
 <br/>
 
